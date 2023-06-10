@@ -8,7 +8,7 @@
     font-family: "Poppins", Arial, sans-serif;
 }
 /* colors
-$red: #b6244f; */
+$red: #cc3434 ; */
 
 h1 {
     font-size: 3em;
@@ -45,7 +45,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.034);
+    background: rgba(0, 0, 0, 0);
 }
 .navbar {
     list-style: none;
@@ -63,7 +63,7 @@ nav {
 }
 .navbar a:hover, .navbar a.active {
     background: #eaeaea00;
-    color: #b6244f;
+    color: #cc3434 ;
     visibility: visible;
     opacity: 1;
     transition: color .4s ease-in;
@@ -81,7 +81,7 @@ nav {
 .home-content h3 {
     font-size: 32px;
     font-weight: 500;
-    color: #b6244f;
+    color: #cc3434 ;
 }
 .home-content {
     background: transparent;
@@ -97,6 +97,7 @@ nav {
     width: 345px;
     height: 50px;
 }
+/* hire me */
 .btn-box a {
     position: relative;
     display: inline-flex;
@@ -104,11 +105,11 @@ nav {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #b6244f;
-    border: 3px solid  #b6244f;
+    background-color: #eaeaea;
+    border: 3px solid  #eaeaea;
     border-radius: 8px;
     font-size: 19px;
-    color: hsl(278, 23%, 28%);
+    color: hsl(0, 0%, 0%);
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
@@ -125,36 +126,40 @@ nav {
   22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
   41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
   100px 100px 80px rgba(0, 0, 0, 0.07);
-  color: #b6244f;
-  background: rgba(255, 0, 0, opacity);
+    color: #cc3434;
+    background: none;
+    border: 3px solid  #eaeaea;
+    /* background: rgba(255, 0, 0, opacity); */
 
   visibility: visible;
-
-  transition: .5s;
+  /* background: none; */
+  transition: .5s ease-in;
   overflow: hidden; 
 }
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: #b6244f;
+/* lets talk button */
+/* .btn-box a:nth-child(2) {
+    background: none;
+    color: #cc3434 
 }
 .btn-box a:nth-child(2)::hover {
-    background: #183642;
+    background: #ffffff;
 }
-.btn-box a:nth-child(2)::before {
-    background: #b6244f; 
-}
-.btn-box a::before { 
+/*hire me */
+/* .btn-box a:nth-child(2)::before {
+    background: #fff; 
+    color:#726262
+} */
+/* mouseover "hire me" */
+/* .btn-box a::before {  
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+     width: 0;
     height: 100%;
-    /* color: #cbc5ea; */
-    background-color: hsla(0, 100%, 30%, opacity);
     z-index: -1;
     transition: .5s;
-}
-.btn-box a:hover::before {
+} */
+/* .btn-box a:hover::before {
     width: 100%;
-}
+} */
