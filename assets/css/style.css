@@ -108,6 +108,9 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
+    background: url('/images/home.png') no repeat;
+    background-size: cover;
+    background-position: center;
 }
 .home-content {
     background: transparent;
@@ -189,5 +192,45 @@ section {
     transition: .5s;
 }
 .btn-box .btn:hover::before {
+    width: 100%;
+}
+.home-sci {
+    position: absolute;
+    bottom: 4rem;
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2.5em;
+    color: var(--main-color);
+    z-index: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: var(--bg-color);
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover::before {
     width: 100%;
 }
